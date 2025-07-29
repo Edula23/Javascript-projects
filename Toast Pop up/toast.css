@@ -1,0 +1,89 @@
+body {
+    font-family: 'Lucida Sans';
+    margin: 0;
+    padding: 20px;
+
+}
+
+.trigger-button{
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.toast{
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    z-index: 1000;
+    transform: translateX(0%);
+
+}
+
+.toast .show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.toast-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.close-icon{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #777;
+
+}
+
+.accept-button, .close-button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.accept-button{
+    background-color: #4caf50;
+    
+}
+.close-button{
+    background-color: #f07272;
+    color: #fff;
+}
+
+.toast-buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.toast-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.toast-text{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
