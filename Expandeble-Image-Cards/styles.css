@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;   
+
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+    margin-inline: auto;
+    height: 400px;
+    background-color: red;
+}
+.card {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden; /*this is to hide the captions*/
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
+    transition: all 0.5s ease;
+}
+
+.card.expanded{
+    flex: 0 0 60vw;
+}
+
+.card:not(.expanded){
+    flex: 1;
+}
+ 
+.card img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img{
+      transform: scale(1.05);
+}
+
+.card .caption{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    width: 100%;
+    transform: translateY(100%); /*this is to hide the caption*/
+    transition: transform 0.3s ease;
+}
+
+.card.expanded .caption{
+    transform: translateY(0); /*this is to show the caption*/
+}
