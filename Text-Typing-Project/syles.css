@@ -36,6 +36,6 @@ h1 span::before{
 
 @keyframes identifier {
     50% {
-        opacity:  ;
+        opacity: 1 ;
     }
 }
