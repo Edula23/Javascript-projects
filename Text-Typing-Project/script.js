@@ -5,8 +5,8 @@ let wordIndex = 0; //this variable keeps track of the current word index int the
 let charIndex = 0; //keeps track of how many characters of the word are typed or deleted
 let isDeleting = false; // this variable indicates the current action is typing or deleting. Setting it to false means it is not deleting hence it is currently typing
 let typingInterval = 200; // Typing speed in 200 milliseconds. time interval at which each character is being typed
-let deletingInterval = 100; // deleting speed 100 milliseconds time interval at which each character is being deleted
-let delayAfterWord = 2200; // delay interval just before each word is typed
+let deletingInterval = 200; // deleting speed 100 milliseconds time interval at which each character is being deleted
+let delayAfterWord = 1500; // delay interval just before each word is typed
 
 //typeEffect arrow function handles the typing and deleting animation
 const typeEffect = () => {  
@@ -20,9 +20,9 @@ const typeEffect = () => {
         setTimeout(typeEffect, typingInterval); 
     }
     //else if statement is for the deleting effect
-    else if(isDeleting && charIndex){
+    else if(isDeleting && charIndex > 0){
         charIndex--;
-        setTimeout(typeEffect, deletingInterval );
+        setTimeout(typeEffect, deletingInterval);
 
     }
     else{//to change words and responsible for the interval
