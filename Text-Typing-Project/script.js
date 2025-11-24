@@ -1,5 +1,6 @@
 const typingText = document.querySelector("h1 span");
-const words = ["awesome", "fabulous", "smart", "intelligent"];
+const words = ["Eden Mengste", "Edom Getahun", "Enas Atham", "Ephratah Girma", "Kalkidan Fekadu", "Eden Alemayehu"
+] ;
 
 let wordIndex = 0; //this variable keeps track of the current word index int the words array
 let charIndex = 0; //keeps track of how many characters of the word are typed or deleted

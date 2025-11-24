@@ -19,4 +19,4 @@ function hideAlert(){
     clearTimeout(timeoutId);
 }
 
-closeButton.addEventListener('click', hideAlert );
+closeButton.addEventListener('click', hideAlert ); 

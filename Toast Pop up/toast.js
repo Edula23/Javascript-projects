@@ -20,8 +20,8 @@ function hideToast(){
     clearTimeout(toastTimerId);
 }
 
-closeIcon.addEventListener('click',hideToast );
-closeButton .addEventListener('click',hideToast );
+closeIcon.addEventListener('click', hideToast);
+closeButton .addEventListener('click', hideToast);
 
 acceptButton.addEventListener('click', ()=>{
     alert('Notification Accepted!');
